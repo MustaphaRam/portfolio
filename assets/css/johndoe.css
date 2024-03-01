@@ -11256,7 +11256,14 @@ p {
   font-size: 22px;
   font-weight: 600;
 }
-
+.portfolio .portfolio-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
 .portfolio .portfolio-container .portfolio-item .content-holder .subtitle {
   font-weight: 500;
   opacity: 1;
@@ -11420,7 +11427,7 @@ pre .code {
 .navbar .brand .brand-img {
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 0%;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -11505,9 +11512,9 @@ pre .code {
 .header {
   position: relative;
   height: 80vh;
-  min-height: 600px;
-  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../imgs/header.jpg);
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../imgs/header.jpg);
+  max-height: 600px;
+  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imgs/header.jpg);
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imgs/header.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -11537,7 +11544,7 @@ pre .code {
 }
 
 .header .header-content .header-title {
-  font-size: calc(40px + (120 - 40) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(40px + (120 - 56) * ((100vw - 300px) / (1600 - 300)));
   font-weight: bold;
   line-height: .7;
   margin-bottom: 25px;
